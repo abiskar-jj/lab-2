@@ -14,6 +14,15 @@ function updateBackgroundColor() {
     const rgbColor = `rgb(${red}, ${green}, ${blue})`;
 
     body.style.backgroundColor = rgbColor;
+}
+
+// event listeners
+redSlider.addEventListener('input', updateBackgroundColor);
+greenSlider.addEventListener('input', updateBackgroundColor);
+blueSlider.addEventListener('input', updateBackgroundColor);
+
+updateBackgroundColor();
+
 
 
 
